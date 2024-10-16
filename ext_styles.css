@@ -1,5 +1,7 @@
 body {
-    background-color: pink;
+    background: url(./NYSC\ logo\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
