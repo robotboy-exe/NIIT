@@ -1,0 +1,22 @@
+.cont1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute ;
+}
+
+.cont2 {
+  background-color: green;
+  height: 200px;
+  width:200px;
+  position: absolute;
+  left: 200px;
+}
+
+.cont3 {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left:400px;
+}

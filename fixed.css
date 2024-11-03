@@ -1,0 +1,28 @@
+* {
+/*  margin: 0 auto;*/
+  padding :0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 1200px;
+  position: fixed;
+  background-color: blue;
+  
+}
+
+.logo {
+  width:20%;
+}
+
+.main {
+  position: relative ;
+  top: 100px;
+}
+
+.sticky {
+  background-color:blueviolet;
+  width:700px;
+  height: 300px;
+  position:relative;
+}

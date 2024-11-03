@@ -1,0 +1,89 @@
+/*
+body {
+  background-color :blue;
+}
+*/
+
+
+header {
+  background-image: url("/AssgtOne/Punch.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+  width:1000px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+nav {
+  text-align: center ;
+  border: 2px solid black;
+}
+nav li{
+  display:inline-block;
+  margin :0px 30px;
+  font-size: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight : 700;
+  font-size : 40px;
+}
+
+article {
+  position:relative;
+  background-color: #CAC2B5;
+  
+}
+
+#leftSide{
+  width:40%;
+  padding-left: 30px;
+}
+
+#rightSide {
+  position:absolute;
+  top:0px;
+  left: 700px;
+  width:40%;
+  padding-right:30px;
+}
+
+#sampleImg img[alt="paperImg"] {
+  width: 400px;
+  height: 400px;
+}
+
+#firstBox {
+  background-color: #EDD4B2;
+  width:350px;
+  height:350px;
+}
+
+#secondBox {
+  background-color :#7D4E57;
+  width: 350px;
+  height:350px;
+}
+
+#thirdBox {
+  background-color: #D66853;
+  border-radius: 5%;
+  text-align: center;
+}
+
+#fourthBox {
+  background-color : palevioletred;
+
+}
+
+#fifthBox {
+  background-color: palegoldenrod;
+}
+
+footer marquee {
+  background-color: red;
+  font-size: 50px;
+  font-weight : 400px;
+}
