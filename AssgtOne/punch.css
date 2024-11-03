@@ -9,9 +9,8 @@ header {
   background-image: url("/AssgtOne/Punch.png");
   background-repeat:no-repeat;
   background-position: center;
-  background-size:cover;
-  width:1000px;
-  height: 300px;
+  width:100%;
+  height:25vh;
   border: 1px solid black;
 }
 
@@ -37,16 +36,27 @@ article {
   
 }
 
+article h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 15px 0;
+}
+
 #leftSide{
   width:40%;
+  padding-top: 0px;
   padding-left: 30px;
+  margin-left: 50px;
+  
 }
 
 #rightSide {
   position:absolute;
-  top:0px;
-  left: 700px;
+  top:50px;
+  left: 55%;
   width:40%;
+  margin-top: 50px;
+  margin-left: ;
   padding-right:30px;
 }
 
