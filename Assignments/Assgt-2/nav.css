@@ -172,7 +172,7 @@ width: 13rem;
   /* align-items: center; */
   padding-left: 250px;
   color: white;
-  font-size: 20px;
+  
 }
 
 #header-content {
@@ -186,9 +186,10 @@ width: 13rem;
   text-transform: uppercase;
   margin-bottom:1.5em;
   font-weight: 800;
+  font-size: 1.3rem;
 }
 
 .main-header #tagline {
-  font-size: 30px;
+  font-size: 1.8em;
   font-weight: 500;
 }
