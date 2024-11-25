@@ -16,8 +16,9 @@ header {
 
 nav {
   text-align: center ;
-  border: 2px solid black;
+  border: 5px solid black;
 }
+
 nav li{
   display:inline-block;
   margin :0px 30px;
@@ -56,8 +57,12 @@ article h1 {
   left: 55%;
   width:40%;
   margin-top: 50px;
-  margin-left: ;
+  margin-left: 0px;
   padding-right:30px;
+}
+
+section {
+  border-radius: 5%;
 }
 
 #sampleImg img[alt="paperImg"] {
