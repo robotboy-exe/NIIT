@@ -1,0 +1,81 @@
+main {
+  display: flex;
+  width: 100%;
+  height : 800px;
+  flex-direction: column;
+}
+
+#rowOne {
+  display:flex;
+  width: 100%;
+  height: 10em;
+  border: 2px solid black;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: red;
+}
+
+#rowTwo {
+  display:flex;
+  width: 100%;
+  height: 10em;
+  border: 2px solid black;
+  background : blue;
+}
+
+#rowTwo .first {
+  width: 50%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowTwo .second{
+  width: 50%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowThree {
+  display:flex;
+  width: 100%;
+  height: 10em;
+  border: 2px solid black;
+}
+
+
+#rowThree .first {
+  width: 25%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowThree .second {
+  width: 50%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowFour {
+  display: flex;
+  width: 100%;
+  height: 10em;
+  border: 2px solid black;
+}
+
+#rowThree .third{
+  width: 25%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowFour .first {
+  width: 80%;
+height: 10em;
+  border: 2px solid black;
+}
+
+#rowFour .second {
+  width: 20%;
+height: 10em;
+  border: 2px solid black;
+}
