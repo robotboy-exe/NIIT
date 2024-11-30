@@ -171,7 +171,7 @@ width: 13rem;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  padding-left: 250px;
+  padding-left: 15rem;
   color: white;
   
 }
@@ -185,12 +185,12 @@ width: 13rem;
 .main-header #title {
   color: grey;
   text-transform: uppercase;
-  margin-bottom:1.5em;
+  margin-bottom:1.5rem;
   font-weight: 800;
   font-size: 1.3rem;
 }
 
 .main-header #tagline {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 500;
 }
