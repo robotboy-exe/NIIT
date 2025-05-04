@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<input id="val1"type="text" name="" value="" />
+= =
+<input type="text" name="" id="val2" value="" />
+<br />
+<input type="radio" name="method" id="" value="" /> Add
+<input type="radio" name="method" id="" value="" /> Subtract
+<input type="radio" name="method" id="" value="" /> Divide
+<input type="radio" name="method" id="" value="" /> Multiply 
+<br />
+<button onclick="solv()" id="solve" type="submit">Solve</button>
+<div id="result" style="border:1px solid black; height:fit-content; width:fit-content ; margin:0px 40px">
+  
+</div>
+
+
+<script>
+  let val1=document.getElementById('val1');
+  let val2=document.getElementById('val2');
+  let solve=document.getElementById('solve');
+  let result=document.getElementById('result');
+  function solv(){
+    let num1=parseFloat(val1.value);
+    let num2=parseFloat(val2.value);
+    result.innerHTML=num1+num2;
+  }
+</script>
+</body>
+
+</html>

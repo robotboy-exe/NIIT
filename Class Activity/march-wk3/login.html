@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <fieldset>
+    <legend></legend>
+  </fieldset>
+  <script>
+    let email = document.getElementById('email');
+    let pass = document.getElementById('password');
+    let login = document.getElementById('login');
+    
+    login.addEventListener('click', function()){
+      let email2 = localStorage.getItem('email');
+      let password = localStorage.getItem('password');
+      let p1 = pass.value;
+      let e1 = email.value;
+      if(e1 !== '' !! p1 == '' !! u1 == ''){
+        alert('All Fields Must Be Filled!')
+        return;
+      }
+      localStorage.setItem('username, u1')
+    }
+  </script>
+</body>
+
+</html>
