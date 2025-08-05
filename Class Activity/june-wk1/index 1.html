@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .res {
+      width: 80%;
+      border: 1px solid black;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .box {
+      height: 200px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id = "res">
+    
+  </div>
+  
+  
+  <script>
+  // Define a class named cars
+  class car {
+    constructor(color, model, year, name) {
+      this.color = color;
+      this.model = model;
+      this.year = year;
+      this.name = name;
+    }
+
+    carDetails() {
+      return `I own a ${this.name} ${this.model} car that was made in ${this.year}. it's ${this.color} in color.`;
+    }
+  }
+
+  // Create car objects using the class
+  let car1 = new car('red', 'Benz', 2025, 'Mercedes');
+  
+  let cars = [car1, car2];
+  
+  let res = document.querySelector('#res')
+  
+  cars.forEach(function (x){
+    res.innerHTML += `
+    <div class = "box">
+    <p>${x.name}</p>
+    <p>${x.model}</p>
+    <p>${x.year}</p>
+    <p>${x.color}</p>
+    <p>${x.carDetails()}</p>
+    <img src="https://en.m.wikipedia.org/wiki/File:Mercedes-Benz_W206_IMG_6380.jpg">
+    </div>
+    `
+  });
+  // Log the output of each player's action
+  console.log(car1.carDetails());
+</script>
+</body>
+
+</html>

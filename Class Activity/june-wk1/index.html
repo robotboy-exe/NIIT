@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+  
+  
+  <script>
+  // Example greeting function (currently not used)
+  // function greet(x){
+  //   alert(`hello ${x}`);
+  // }
+
+  // Define a class named player
+  class player {
+    constructor(name, number, strength, skill) {
+      this.name = name;
+      this.number = number;
+      this.strength = strength;
+      this.skill = skill;
+    }
+
+    playeraction() {
+      return `${this.name} is wearing ${this.number} shirt, and he has ${this.skill} skill.`;
+    }
+  }
+
+  // Create player objects using the class
+  let player1 = new player('Desmond', 54, 200, 'Dribble');
+  let player2 = new player('Des', 8, 500, 'corner');
+  let player3 = new player('John', 5, 300, 'heading');
+  let player4 = new player('Emmy', 4, 200, 'kicking');
+
+  // Log the output of each player's action
+  console.log(player1.playeraction());
+  console.log(player2.playeraction());
+  console.log(player3.playeraction());
+  console.log(player4.playeraction());
+</script>
+</body>
+
+</html>

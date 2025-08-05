@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .det{
+        width: 100%;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: skyblue;
+        border: 1px solid black;
+      }
+      .cont{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      div{
+        border: 1px solid white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- name input -->
+    <div class="det" id="det">
+      <input type="text" name="" id="name" placeholder="name"/>
+      <input type="text" name="" id="phone" placeholder="phone"/>
+
+      <button onclick="send()">submit</button>
+    </div>
+    <!-- main container -->
+    <div class="cont" id="cont">
+      <div id="name1"></div>
+      <div id="phone1"></div>
+    </div>
+
+    <script>
+      // let z = 5+6;
+      // if(z === 11){
+      //   window.location.href = 'https://www.google.com';
+      // }
+      
+      let name1 = document.getElementById('name1');      
+      let phone1 = document.getElementById('phone1');      
+
+      let uname = localStorage.getItem("uname");
+      let uphone = localStorage.getItem("uphone");
+      if (uname && uphone) {
+        document.getElementById('det').style.display= 'none';
+      console.log(localStorage.getItem('uname'));
+      console.log(localStorage.getItem('uphone'));
+      name1.innerHTML =localStorage.getItem('uname');
+      phone1.innerHTML =localStorage.getItem('uphone');
+      }else{
+        document.getElementById('det').style.display = 'flex';
+      }
+
+      function send() {
+        let name = document.getElementById("name").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        localStorage.setItem('uname',name);
+        localStorage.setItem('uphone',phone);
+
+        console.log(localStorage.getItem('uname'));
+        console.log(localStorage.getItem('uphone'));
+
+        window.location.reload();
+      }
+      //`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    </script>
+  </body>
+</html>
