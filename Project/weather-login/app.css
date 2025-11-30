@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  margin:0;
+  padding :0;
+  box-sizing:border-box;
+}
+
+:root {
+  /* Light mode */
+  --tangerine-dream: #ef946c;
+  --soft-fawn:       #c4a77d;
+  --deep-teal:       #70877f;
+  --twilight-indigo: #454372;
+  --space-indigo:    #2f2963;
+  
+  /*Typography*/
+  --line-height-body:1.5;
+  --line-height-heading:1.2;
+}
+
+.dark {
+  /* Dark mode */
+  --tangerine-dream: #d96f3a;
+  --soft-fawn:       #a07f4e;
+  --deep-teal:       #4b6b63;
+  --twilight-indigo: #2d2a59;
+  --space-indigo:    #1a1638;
+  
+  /*Typography*/
+  --line-height-body:1.7;
+  --line-height-heading:1.4;
+}
+
+/* Example usage */
+buttons {
+  background: var(--tangerine-dream);
+  color: var(--space-indigo);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.form-card {
+  border: 2px solid black;
+  text-align: center;
+  padding: 2rem 2rem;
+  
+}
+
+.form-card h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+}
+
+.form-card p.subtitle {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size:0.8rem;
+}
+
+.form-card input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+
+.remember-label, .forgot-link {
+  display : inline-flex;
+  width: auto;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.remember-label input {
+  all:revert;
+  width: auto;
+  height: auto;
+  
+}
+
+.forgot-link {
+  margin-left: auto;
+  text-decoration : none;
+}
+
+.form-card button {
+  display: block;
+  border: none;
+  width: 100%;
+  color: white; 
+  background-color: black ;
+  font-size: 1.1rem;
+  padding: 0.6em 0.6em;
+}
+
+form a.create-new {
+  text-decoration: none;
+}
