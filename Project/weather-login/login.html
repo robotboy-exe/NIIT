@@ -11,27 +11,43 @@
 <body>
   
   <div class="form-card">
+    
+    <div id="form-logo">
+      <div id="logo-white">
+        <!--form logo-->
+      </div>
+    </div>
+    
     <h1>SIGN IN</h1>
     <p class="subtitle">ENTER YOUR CREDENTIALS</p>
     
     <form action="" method="get" accept-charset="utf-8">
+    
+      <div class="fields">
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" value="" required/>
+      </div>
       
-      <label for="email">EMAIL</label>
-      <input type="email" name="email" id="email" value="" required/>
+      <div class="fields">
+        <label for="password">PASSWORD</label>
+        <div id="password-field">
+          <input type="password" name="password" id="password" value="" required/>
+          <button type="button" class="show-password-btn" data-target="#password">SHOW</button>
+        </div>
+      </div>
       
-      <label for="password">PASSWORD</label>
-      <input type="password" name="password" id="password" value="" required/>
-      
-      <label for="remember" class="remember-label">
-        <input type="checkbox" name="remember" id="remember" value="yes" />
-        Remember Me
-      </label>
+      <div class="options">
+        <label for="remember" class="remember-label">
+          <input type="checkbox" name="remember" id="remember" value="yes" />Remember Me
+        </label>
       
       <a href="#" class="forgot-link">FORGOT PASSWORD?</a>
+      </div>
+      
       
       <button type="submit">SIGN IN</button>
       
-      <p>No Account? <a href="#" class="create-new">CREATE ONE</a>
+      <p>No Account? <a href="register.html" class="create-new">CREATE ONE</a>
       </p>
     </form>
     
@@ -39,7 +55,8 @@
   
   
   
-  
+  <script type="text/javascript" charset="utf-8" src="app.js">
+  </script>
 </body>
 
 </html>
