@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie/TV Shows App</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Movie/TV Shows App</title>
-  <link rel="stylesheet" href="app.css">
-</head>
+  <body>
+    <h1>Movies/TV App</h1>
 
-<body>
-  <h1>Movies/TV App</h1>
+    <form action="" id="search">
+      <label for="search">SEARCH</label>
+      <input type="text" name="search" id="search-bar" />
+      <button>SEARCH</button>
+    </form>
 
-  <form action="" id="search">
-    <label for="search">SEARCH</label>
-    <input type="text" name="search" id="search-bar">
-    <button>SEARCH</button>
-  </form>
-
-  <div id="newReleases">
-    <h2>NEW RELEASES</h2>
+    <div id="newReleases">
+      <h2>NEW RELEASES</h2>
       <div class="carousel">
-
         <template id="card-template">
           <div class="card">
-            <img class="poster" src="" alt="poster-img" >
+            <img class="poster" src="" alt="poster-img" />
             <h3 class="title"></h3>
             <p class="desc"></p>
           </div>
         </template>
-
       </div>
-  </div>
-
-  <div id="trending">
-    <h2>TRENDING</h2>
-    <div class="carousel">
-
     </div>
-  </div>
-  
-  <div id="Watchlist">
-    <h2>WATCHLIST</h2>
-    <div class="carousel">
 
+    <div id="trending">
+      <h2>TRENDING</h2>
+      <div class="carousel"></div>
     </div>
-  </div>
 
-  <script src="app.js"></script>
+    <div id="Watchlist">
+      <h2>WATCHLIST</h2>
+      <div class="carousel"></div>
+    </div>
 
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>

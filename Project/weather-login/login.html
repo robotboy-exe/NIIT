@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="app.css"/>
-</head>
-
-<body>
-  
-  <div class="form-card">
-    
-    <div id="form-logo">
-      <div id="logo-white">
-        <!--form logo-->
-      </div>
-    </div>
-    
-    <h1>SIGN IN</h1>
-    <p class="subtitle">ENTER YOUR CREDENTIALS</p>
-    
-    <form action="" method="get" accept-charset="utf-8">
-    
-      <div class="fields">
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" value="" required/>
-      </div>
-      
-      <div class="fields">
-        <label for="password">PASSWORD</label>
-        <div id="password-field">
-          <input type="password" name="password" id="password" value="" required/>
-          <button type="button" class="show-password-btn" data-target="#password">SHOW</button>
+  <body>
+    <div class="form-card">
+      <div id="form-logo">
+        <div id="logo-white">
+          <!--form logo-->
         </div>
       </div>
-      
-      <div class="options">
-        <label for="remember" class="remember-label">
-          <input type="checkbox" name="remember" id="remember" value="yes" />Remember Me
-        </label>
-      
-      <a href="#" class="forgot-link">FORGOT PASSWORD?</a>
-      </div>
-      
-      
-      <button type="submit">SIGN IN</button>
-      
-      <p>No Account? <a href="register.html" class="create-new">CREATE ONE</a>
-      </p>
-    </form>
-    
-  </div>
-  
-  
-  
-  <script type="text/javascript" charset="utf-8" src="app.js">
-  </script>
-</body>
 
+      <h1>SIGN IN</h1>
+      <p class="subtitle">ENTER YOUR CREDENTIALS</p>
+
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="fields">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" value="" required />
+        </div>
+
+        <div class="fields">
+          <label for="password">PASSWORD</label>
+          <div id="password-field">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value=""
+              required
+            />
+            <button
+              type="button"
+              class="show-password-btn"
+              data-target="#password"
+            >
+              SHOW
+            </button>
+          </div>
+        </div>
+
+        <div class="options">
+          <label for="remember" class="remember-label">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              value="yes"
+            />Remember Me
+          </label>
+
+          <a href="#" class="forgot-link">FORGOT PASSWORD?</a>
+        </div>
+
+        <button type="submit">SIGN IN</button>
+
+        <p>
+          No Account? <a href="register.html" class="create-new">CREATE ONE</a>
+        </p>
+      </form>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="app.js"></script>
+  </body>
 </html>

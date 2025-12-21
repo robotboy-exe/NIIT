@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="app.css">
-</head>
-
-<body>
-  
-  <div class="form-card registration">
-    
-    <div id="form-logo">
-      <div id="logo-white">
-        <!--form logo-->
+  <body>
+    <div class="form-card registration">
+      <div id="form-logo">
+        <div id="logo-white">
+          <!--form logo-->
+        </div>
       </div>
+
+      <h1>SIGN UP</h1>
+      <p class="subtitle">ENTER YOUR CREDENTIALS</p>
+
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="fields">
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            value=""
+            placeholder="FULL NAME"
+            required
+          />
+        </div>
+
+        <div class="fields">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="EMAIL"
+            required
+          />
+        </div>
+
+        <div class="fields">
+          <input
+            type="number"
+            name="number"
+            id="number"
+            value=""
+            placeholder="PHONE NUMBER (Optional)"
+          />
+        </div>
+
+        <div class="location-row">
+          <div class="fields">
+            <input
+              type="text"
+              name="city"
+              id="city"
+              value=""
+              placeholder="CITY"
+              required
+            />
+          </div>
+
+          <div class="fields">
+            <input
+              type="text"
+              name="state"
+              id="state"
+              value=""
+              placeholder="STATE"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="fields">
+          <input
+            type="text"
+            name="address"
+            id="address"
+            value=""
+            placeholder="STREET ADDRESS"
+            required
+          />
+        </div>
+
+        <div class="fields">
+          <div id="password-field">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value=""
+              placeholder="PASSWORD"
+              required
+            />
+            <button
+              type="button"
+              class="show-password-btn"
+              data-target="#password"
+            >
+              SHOW
+            </button>
+          </div>
+        </div>
+
+        <div class="fields">
+          <h2>Profile Photo</h2>
+
+          <input
+            type="file"
+            name="avatar"
+            id="avatar"
+            accept="image/*"
+            style="display: none"
+            required
+          />
+
+          <div class="upload-preview">
+            <img src="" alt="preview" id="preview" />
+            <span class="upload-placeholder">No Image Selected</span>
+          </div>
+
+          <button class="btn-upload">Choose File</button>
+        </div>
+
+        <button type="submit">SUBMIT</button>
+
+        <p>Already A User? <a href="login.html" class="sign-in">SIGN IN</a></p>
+      </form>
     </div>
-    
-    <h1>SIGN UP</h1>
-    <p class="subtitle">ENTER YOUR CREDENTIALS</p>
-    
-    <form action="" method="get" accept-charset="utf-8">
-      
-      <div class="fields">
-        <input type="text" name="full-name" id="full-name" value="" placeholder="FULL NAME" required/>
-      </div>
-      
-      <div class="fields">
-        <input type="email" name="email" id="email" value="" placeholder="EMAIL" required/>
-      </div>
 
-      <div class="fields">
-        <input type="number" name="number" id="number" value="" placeholder="PHONE NUMBER (Optional)"/>
-      </div>
-      
-      <div class="location-row">
-        <div class="fields">
-          <input type="text" name="city" id="city" value="" placeholder="CITY" required/>
-        </div>      
-      
-        <div class="fields">
-          <input type="text" name="state" id="state" value="" placeholder="STATE" required/>
-        </div>            
-      </div>
-      
-      <div class="fields">
-        <input type="text" name="address" id="address" value="" placeholder="STREET ADDRESS" required/>
-      </div>            
-      
-      <div class="fields">
-        <div id="password-field">
-          <input type="password" name="password" id="password" value="" placeholder="PASSWORD" required/>
-          <button type="button" class="show-password-btn" data-target="#password">SHOW</button>
-        </div>
-      </div>
-      
-      <div class="fields">
-        <h2>Profile Photo</h2>
-        
-        <input type="file" name="avatar" id="avatar" accept="image/*" style="display:none;" required/>
-        
-        <div class="upload-preview">
-          <img src="" alt="preview" id="preview" />
-          <span class="upload-placeholder">No Image Selected</span>
-        </div>
-        
-        <button class="btn-upload">Choose File</button>
-      </div>
-      
-      <button type="submit">SUBMIT</button>
-      
-      <p>Already A User? <a href="login.html" class="sign-in">SIGN IN</a>
-      </p>
-    </form>
-    
-  </div>
-  
-  
-  <script src="app.js" type="text/javascript" charset="utf-8"></script>
-</body>
-
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>
