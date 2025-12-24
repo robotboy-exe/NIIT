@@ -70,13 +70,13 @@ body {
 }
 
 .form-card h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
   font-weight: 800;
 }
 
 .form-card p.subtitle {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
   color:grey;
@@ -85,7 +85,7 @@ body {
 .form-card form {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem
+  gap: 2.1rem
 }
 
 .registration {
@@ -135,7 +135,7 @@ body {
 
 .fields label {
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 form input {
