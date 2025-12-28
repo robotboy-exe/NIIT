@@ -90,38 +90,7 @@ body {
 .form-card form {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem
-}
-
-.registration {
-  border: 3px solid black;
-  text-align: center;
-  padding: 1.3rem;
-  width: 88%;
-  max-width: 28rem;
-  margin: 0 auto;
-  box-sizing: border-box;
-  box-shadow: 0.5rem 0.5rem 0.5px rgba(0, 0, 0, 1);
-}
-
-.registration h1 {
-  margin-bottom: 0.8rem;
-}
-
-.registration p.subtitle {
-  margin-bottom: 1rem;
-}
-
-.registration form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-.location-row {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  gap: 2.5rem;
 }
 
 .fields {
@@ -227,4 +196,35 @@ form a.sign-in {
   color: black;
   font-size: 0.9rem;
   cursor: pointer;
+}
+
+.registration {
+  border: 3px solid black;
+  text-align: center;
+  padding: 1.3rem;
+  width: 88%;
+  max-width: 28rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0.5rem 0.5rem 0.5px rgba(0, 0, 0, 1);
+}
+
+.registration h1 {
+  margin-bottom: 0.8rem;
+}
+
+.registration p.subtitle {
+  margin-bottom: 1rem;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.location-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
