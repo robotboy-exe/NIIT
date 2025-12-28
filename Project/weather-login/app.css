@@ -87,7 +87,7 @@ body {
 
 .form-card p.subtitle {
   font-size: 1.1rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.9rem;
   font-weight: 600;
   color: grey;
 }
@@ -95,7 +95,7 @@ body {
 .form-card form {
   display: flex;
   flex-direction: column;
-  gap: 1.9rem;
+  gap: 1.4rem;
 }
 
 .fields {
