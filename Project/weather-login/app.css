@@ -75,7 +75,7 @@ body {
 }
 
 .form-card h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
   font-weight: 800;
 }
@@ -90,7 +90,7 @@ body {
 .form-card form {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2.5rem
 }
 
 .registration {
