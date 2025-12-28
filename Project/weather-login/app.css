@@ -38,7 +38,12 @@ buttons {
   color: var(--space-indigo);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
   display: grid;
   min-height: 100vh;
   place-items: center;
@@ -103,7 +108,7 @@ body {
 }
 
 .fields input::placeholder {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 0.7rem;
 }
 
