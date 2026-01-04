@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
 
-  <body>
+  <body id="registration-body">
     <div class="form-card registration">
       <div id="form-logo">
         <div id="logo-white">
@@ -118,12 +118,23 @@
             required
           />
 
-          <div class="upload-preview">
-            <img src="" alt="preview" id="preview" />
+          <!-- Image preview Area -->
+          <div class="upload-preview" id="previewBox">
+            <img src="" alt="Image preview" id="preview" />
             <span class="upload-placeholder">No Image Selected</span>
           </div>
 
-          <button class="btn-upload">Choose File</button>
+          <!-- File upload controls -->
+          <div class="upload-controls">
+            <button type="button" class="btn-upload">Choose File</button>
+            <div class="file-info">
+              <span class="file-name">No file chosen</span>
+              <span class="file-size"></span>
+            </div>
+          </div>
+
+          <!--Validation message Area-->
+          <div class="message" id="uploadMessage"></div>
         </div>
 
         <button type="submit">SUBMIT</button>
