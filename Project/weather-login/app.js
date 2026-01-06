@@ -151,10 +151,8 @@ function resetPreview() {
     URL.revokeObjectURL (currentObjectURL);
     currentObjectURL = null;
   }
-
   previewImg.src= '';
   previewImg.style.display = 'none';
   placeholder.style.display = 'block';
   previewBox.classList.remove('has-image')
-
 }
