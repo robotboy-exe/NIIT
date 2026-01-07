@@ -38,7 +38,7 @@ const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/gif", "image/webp"];
 const MAX_SIZE_MB = 3;
 const maxSizeBytes = MAX_SIZE_MB * 1024 * 1024;
 
-// Track the current Object URL for cleanup
+// Declare the current Object URL for tracking and cleanup
 let currentObjectURL = null;
 
 // CREATE IMAGE PREVIEW
@@ -49,7 +49,7 @@ function createPreview(file) {
   }
 
   //2. Create Image URL
-  const currentObjectURL = URL.createObjectURL(file);
+  currentObjectURL = URL.createObjectURL(file);
 
   //3. Set image Source to display preview
   previewImg.src = currentObjectURL;
@@ -81,7 +81,7 @@ fileInput.addEventListener("change", function (event) {
   // Reset any previous messages
   messageDiv.textContent = "";
   messageDiv.className = "message";
-  message.style.display = "none";
+  messageDiv.style.display = "none";
 
   //CASE A: No File Selected
   if (!file) {
@@ -130,6 +130,8 @@ function showMessage(text, isError = false) {
   }
 }
 
+// FORMAT FILE SIZE 
+
 function formatFileSize(bytes) {
   if (bytes < 1024) {
     return bytes + " B";
@@ -140,19 +142,31 @@ function formatFileSize(bytes) {
   return (bytes / 1048576).toFixed(1) + " MB";
 }
 
+// CLEANUP OBJECT URL
+
+ function cleanupObjectURL() {
+   if (currentObjectURL) {
+    URL.revokeObjectURL(currentObjectURL);
+    currentObjectURL = null;
+  }
+ }
+
+// RESET PREVIEW
+
 function resetPreview() {
   // 1. Clear the file input value Reject File
   fileInput.value = "";
 
-  // 2. Clean up previous object URL if it exists
-  if (currentObjectURL) {
-    URL.revokeObjectURL(currentObjectURL);
-    currentObjectURL = null;
-  }
+  // 2. Clean up previous Image URL if it exists
+  cleanupObjectURL();
 
   // 3. Reset UI elements
   previewImg.src = "";
   previewImg.style.display = "none";
   placeholder.style.display = "block";
   previewBox.classList.remove("has-image");
+
+  //4. Reset file info section 
+  fileNameSpan.textContent = "No file chosen";
+  fileSizeSpan.textContent = "";
 }

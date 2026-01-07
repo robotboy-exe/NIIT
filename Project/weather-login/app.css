@@ -100,9 +100,6 @@ body {
 }
 
 .fields {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
   font-size: 0.8rem;
   width: 100%;
   text-align: left;
@@ -249,11 +246,56 @@ form a.sign-in {
   gap: 0.5rem;
 }
 
+.fields.avatar-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.fields.avatar-preview h2 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  
+}
+
 .upload-preview {
-  width:4rem;
-  height:4rem;
+  width: 75px;
+  height: 75px;
+  margin: 0;
   background-color: grey;
+  border: 2px dashed #ccc;
   border-radius: 0.8em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.upload-preview.has-image {
+  border: solid #4caf50;
+}
+
+
+#preview {
+  object-fit: contain;
+}
+
+.upload-controls {
+  border:1px solid grey;
+  flex:1;
+  display:flex;
+  align-self:center;
+  align-items: center;
+  gap:0.5rem;
+  max-width: 13rem;
+  max-height: 2.8rem;
+}
+
+.btn-upload {
+  width:5rem;
 }
 
 /*MEDIA QUERIES*/
