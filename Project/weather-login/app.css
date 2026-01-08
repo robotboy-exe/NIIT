@@ -257,8 +257,8 @@ form a.sign-in {
 .preview-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  flex-wrap: nowrap;
+  gap: 0.5rem;
+  /* flex-wrap: nowrap; */
   width: 100%;
 }
 
@@ -267,7 +267,7 @@ form a.sign-in {
   width: 75px;
   height: 75px;
   margin: 0;
-  background-color: grey;
+  background-color: #f5eeee;
   border: 2px dashed #ccc;
   border-radius: 0.8em;
   text-align: center;
@@ -276,6 +276,18 @@ form a.sign-in {
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+
+.upload-preview.has-image {
+  border: solid #4caf50;
+}
+
+.upload-placeholder {
+  color: #888;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  line-height: 1.4;
 }
 
 .btn-upload {
@@ -295,8 +307,19 @@ form a.sign-in {
   overflow: hidden;
 }
 
-.upload-preview.has-image {
-  border: solid #4caf50;
+.file-name {
+  font-weight: bold;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.file-size {
+  font-size: 0.75rem;
+  color: #666;
+  white-space: nowrap;
 }
 
 #preview {
