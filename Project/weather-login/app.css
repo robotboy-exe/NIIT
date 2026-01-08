@@ -50,7 +50,6 @@ body {
   font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
   font-style: normal;
-  
 }
 
 #form-logo {
@@ -202,7 +201,6 @@ form a.sign-in {
 }
 
 #registration-body {
-
 }
 
 .registration {
@@ -214,7 +212,6 @@ form a.sign-in {
   margin: 0 auto;
   box-sizing: border-box;
   box-shadow: 0.5rem 0.5rem 0.5px rgba(0, 0, 0, 1);
-
 }
 
 .registration form {
@@ -233,7 +230,6 @@ form a.sign-in {
 
 .registration input {
   height: 2.4rem;
-
 }
 
 .registration #password-field button {
@@ -247,19 +243,27 @@ form a.sign-in {
 }
 
 .fields.avatar-preview {
-  display: block;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
 
 .fields.avatar-preview h2 {
   width: 100%;
-  margin-bottom: 0.5rem;
-  
+  margin-bottom: 0;
+}
+
+.preview-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .upload-preview {
+  flex: 0 0 auto;
   width: 75px;
   height: 75px;
   margin: 0;
@@ -270,7 +274,24 @@ form a.sign-in {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-upload {
+  display: inline-flex;
   flex: 0 0 auto;
+  width: auto;
+  height: 2.4rem;
+  
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -278,26 +299,23 @@ form a.sign-in {
   border: solid #4caf50;
 }
 
-
 #preview {
   object-fit: contain;
 }
 
-.upload-controls {
-  border:1px solid grey;
-  
-  display:flex;
+/* .upload-controls {
+  border: 1px solid grey;
+
+  display: flex;
   flex-wrap: nowrap;
-  align-self:center;
+  align-self: center;
   align-items: center;
-  gap:0.5rem;
+  gap: 0.5rem;
   max-width: 13rem;
   max-height: 2.8rem;
 }
+ */
 
-.btn-upload {
-  flex: 0 0 auto;
-}
 
 /*MEDIA QUERIES*/
 @media (min-width: 600px) {
@@ -305,28 +323,23 @@ form a.sign-in {
     width: 85%;
     max-width: 33rem;
     padding: 2.5rem;
-    
   }
 
   .form-card h1 {
     font-size: 2rem;
-}
+  }
 
-#registration-body {
-  padding: 4rem;
-}
+  #registration-body {
+    padding: 4rem;
+  }
 
-.registration {
+  .registration {
     width: 85%;
     max-width: 33rem;
     padding: 2rem;
+  }
 
+  .registration h1 {
+    font-size: 1.5rem;
+  }
 }
-
-.registration h1 {
-  font-size: 1.5rem
-}
-
-
-}
-
