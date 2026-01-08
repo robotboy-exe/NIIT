@@ -110,7 +110,6 @@ fileInput.addEventListener("change", function (event) {
 //===== HELPER FUNCTIONS =====
 
 //SHOW MESSAGE
-
 function showMessage(text, isError = false) {
   //1. Set the text
   messageDiv.textContent = text;
@@ -130,8 +129,7 @@ function showMessage(text, isError = false) {
   }
 }
 
-// FORMAT FILE SIZE 
-
+// FORMAT FILE SIZE
 function formatFileSize(bytes) {
   if (bytes < 1024) {
     return bytes + " B";
@@ -143,16 +141,14 @@ function formatFileSize(bytes) {
 }
 
 // CLEANUP OBJECT URL
-
- function cleanupObjectURL() {
-   if (currentObjectURL) {
+function cleanupObjectURL() {
+  if (currentObjectURL) {
     URL.revokeObjectURL(currentObjectURL);
     currentObjectURL = null;
   }
- }
+}
 
 // RESET PREVIEW
-
 function resetPreview() {
   // 1. Clear the file input value Reject File
   fileInput.value = "";
@@ -166,7 +162,7 @@ function resetPreview() {
   placeholder.style.display = "block";
   previewBox.classList.remove("has-image");
 
-  //4. Reset file info section 
+  //4. Reset file info section
   fileNameSpan.textContent = "No file chosen";
   fileSizeSpan.textContent = "";
 }

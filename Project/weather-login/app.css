@@ -247,7 +247,6 @@ form a.sign-in {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  
 }
 
 .fields.avatar-preview h2 {
@@ -257,7 +256,7 @@ form a.sign-in {
 
 .fields.avatar-preview h2 span {
   font-size: 0.7rem;
-  font-weight:400;
+  font-weight: 400;
   margin-left: 1rem;
 }
 
@@ -265,9 +264,8 @@ form a.sign-in {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   width: 100%;
-  
 }
 
 .upload-preview {
@@ -291,14 +289,14 @@ form a.sign-in {
 }
 
 .upload-preview img {
-  max-width:100%;
-  max-height:100%;
-  width:auto;
-  height:auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
   object-position: center;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
 .upload-placeholder {
@@ -311,11 +309,11 @@ form a.sign-in {
 
 .btn-upload {
   width: auto;
-  height: 1.3rem;
+  height: 1.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  font-size: 0.6rem;
 }
 
 .file-info {
@@ -323,7 +321,7 @@ form a.sign-in {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  width :0;
+  width: 0;
 }
 
 .file-name {
@@ -357,7 +355,6 @@ form a.sign-in {
   max-height: 2.8rem;
 }
  */
-
 
 /*MEDIA QUERIES*/
 @media (min-width: 600px) {
