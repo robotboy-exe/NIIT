@@ -45,7 +45,7 @@ html {
 body {
   overflow-x: hidden;
   display: grid;
-  min-height: 100vh;
+  min-height: 100dvh;
   place-items: center;
   font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
