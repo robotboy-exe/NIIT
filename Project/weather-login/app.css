@@ -257,18 +257,19 @@ form a.sign-in {
 .fields.avatar-preview h2 span {
   font-size: 0.7rem;
   font-weight: 400;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .preview-row {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.3rem;
   flex-wrap: nowrap;
   width: 100%;
 }
 
 .upload-preview {
+  display: flex;
   flex: 0 0 75px;
   width: 75px;
   height: 75px;
@@ -277,7 +278,6 @@ form a.sign-in {
   border: 2px dashed #ccc;
   border-radius: 0.8em;
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -307,19 +307,31 @@ form a.sign-in {
   line-height: 1.4;
 }
 
+.upload-controls {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 0.6em;
+  padding: 0.2rem;
+  flex: 1;
+  gap: 0.2rem;
+}
+
 .btn-upload {
-  width: auto;
-  height: 1.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
+  height: 1.7rem;
   font-size: 0.6rem;
+  border-radius:0.5em;
+  white-space: nowrap;
 }
 
 .file-info {
-  flex: 1 1 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-width: 0;
   width: 0;
 }
